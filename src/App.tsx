@@ -1,7 +1,9 @@
 import './App.css';
+import { DivComponent } from './components/NodeElement';
 import { PersonComponent } from './components/Person';
 import { getPersonsList, PersonList } from './components/PersonList';
 import { StatusComponent } from './components/Status';
+import { TextContentComponent } from './components/TextContent';
 import { Welcome } from './components/Welcome';
 
 function App() {
@@ -12,7 +14,12 @@ function App() {
       <Welcome name="John" count={10} status={false}/>
       <PersonComponent name='John' address={{city:'Delhi', pincode:201301}}/>
       <PersonList elem={getPersonsList().elem}/>
-      <StatusComponent value='loading'/>
+      <StatusComponent value='error'/>
+      <StatusComponent/>
+      <TextContentComponent>Enter Text Message</TextContentComponent>
+      <DivComponent>
+        <TextContentComponent>Enter Text Message</TextContentComponent>
+      </DivComponent>
     </div>
   );
 }
