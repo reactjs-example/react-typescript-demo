@@ -6,6 +6,7 @@ import { getPersonsList, PersonList } from './components/PersonList';
 import { StatusComponent } from './components/Status';
 import { StyleComponent } from './components/StyleComponent';
 import { TextContentComponent } from './components/TextContent';
+import { Counter } from './components/UseReducerCounter';
 import { LoginComponent, LoginUserComponent } from './components/UserStateLoginComponent';
 import { Welcome } from './components/Welcome';
 
@@ -52,6 +53,9 @@ function App() {
       {/** useState hook */}
       <LoginComponent/> {/** a simple state object */}
       <LoginUserComponent/> {/** a state object with type */}
+
+      {/** useReducer Hook */}
+      <Counter/>
     </div>
   );
 }
