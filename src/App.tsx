@@ -4,6 +4,7 @@ import { DivComponent } from './components/NodeElement';
 import { PersonComponent } from './components/Person';
 import { getPersonsList, PersonList } from './components/PersonList';
 import { StatusComponent } from './components/Status';
+import { StyleComponent } from './components/StyleComponent';
 import { TextContentComponent } from './components/TextContent';
 import { Welcome } from './components/Welcome';
 
@@ -44,6 +45,8 @@ function App() {
       />
 
       <InputTextComponent value="intial value" change={(e,id)=> console.log(id, e)}/>
+
+      <StyleComponent styles={{ border: "solid black 1px", margin: "50px" }}/>
     </div>
   );
 }
