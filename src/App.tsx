@@ -6,6 +6,7 @@ import { getPersonsList, PersonList } from './components/PersonList';
 import { StatusComponent } from './components/Status';
 import { StyleComponent } from './components/StyleComponent';
 import { TextContentComponent } from './components/TextContent';
+import { LoginComponent, LoginUserComponent } from './components/UserLoginComponent';
 import { Welcome } from './components/Welcome';
 
 function App() {
@@ -47,6 +48,10 @@ function App() {
       <InputTextComponent value="intial value" change={(e,id)=> console.log(id, e)}/>
 
       <StyleComponent styles={{ border: "solid black 1px", margin: "50px" }}/>
+
+      {/** useState hook */}
+      <LoginComponent/> {/** a simple state object */}
+      <LoginUserComponent/> {/** a state object with type */}
     </div>
   );
 }
