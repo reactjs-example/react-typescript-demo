@@ -12,7 +12,9 @@ export const LoginUserComponent = () => {
     loggedIn: false,
   };
   /** instead of null below we can pass above INITIAL_VALUE too */
-  const [user, setUser] = useState<LoggedInUser | null>(null);
+  const [user, setUser] = useState<LoggedInUser | null>(null); /** this need null check like user?.name */
+//   const [user, setUser] = useState<LoggedInUser>({} as LoggedInUser); /** this need no null check like user?.name */
+//   const [user, setUser] = useState<LoggedInUser>(INTIAL_VALUE); /** no need of null check like user?.name */
 
   const loginHandler = () => {
     setUser((prevState) => ({
