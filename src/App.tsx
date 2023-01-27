@@ -6,7 +6,7 @@ import { getPersonsList, PersonList } from './components/PersonList';
 import { StatusComponent } from './components/Status';
 import { StyleComponent } from './components/StyleComponent';
 import { TextContentComponent } from './components/TextContent';
-import { LoginComponent, LoginUserComponent } from './components/UserLoginComponent';
+import { LoginComponent, LoginUserComponent } from './components/UserStateLoginComponent';
 import { Welcome } from './components/Welcome';
 
 function App() {
