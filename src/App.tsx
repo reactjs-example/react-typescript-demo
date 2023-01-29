@@ -29,6 +29,7 @@ import {
   ListGenericComponentStringOrNumber,
   ListGenericComponentWithIdKey,
 } from "./components/generic/ListComponent";
+import { RandomNumberComponent } from "./components/restriction/RandomNumberProps";
 
 function App() {
   return (
@@ -127,6 +128,9 @@ function App() {
         }}
         values={[{ id: 1, name: "john" }, {id:2, name:'alex'}]}
       />
+
+      {/** type restriction: without type restriction all 3 boolean flags are allowed */}
+      <RandomNumberComponent value={10} isPositive/>
     </div>
   );
 }
