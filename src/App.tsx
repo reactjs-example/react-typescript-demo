@@ -30,6 +30,7 @@ import {
   ListGenericComponentWithIdKey,
 } from "./components/generic/ListComponent";
 import { RandomNumberComponent } from "./components/restriction/RandomNumberProps";
+import { Toast } from "./components/template/ToastTemplate";
 
 function App() {
   return (
@@ -131,6 +132,9 @@ function App() {
 
       {/** type restriction: without type restriction all 3 boolean flags are allowed */}
       <RandomNumberComponent value={10} isPositive/>
+
+      {/** exclusion of props in template literals */}
+      <Toast position="center"/>
     </div>
   );
 }
