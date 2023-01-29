@@ -13,6 +13,8 @@ import { TextContentComponent } from './components/TextContent';
 import { Counter } from './components/reducer/UseReducerCounter';
 import { LoginComponent, LoginUserComponent } from './components/state/UserStateLoginComponent';
 import { Welcome } from './components/Welcome';
+import { DomRef } from './components/ref/DomRef';
+import { MutableRef } from './components/ref/MutableRef';
 
 function App() {
 
@@ -69,6 +71,10 @@ function App() {
       <UserContextProvider>
         <User></User>
       </UserContextProvider>
+
+      {/** useRef */}
+      <DomRef/>
+      <MutableRef/>
     </div>
   );
 }
