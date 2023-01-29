@@ -15,6 +15,8 @@ import { LoginComponent, LoginUserComponent } from './components/state/UserState
 import { Welcome } from './components/Welcome';
 import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
+import { LoginView } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
 
@@ -75,6 +77,9 @@ function App() {
       {/** useRef */}
       <DomRef/>
       <MutableRef/>
+
+      {/** a component as props */}
+      <LoginView isLoggedIn={true} paramComponent={Profile}/>
     </div>
   );
 }
