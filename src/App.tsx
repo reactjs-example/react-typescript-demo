@@ -1,4 +1,8 @@
 import './App.css';
+import { Box } from './components/context/theme/Box';
+import { ThemeContextProvider } from './components/context/theme/ThemeContext';
+import { User } from './components/context/user/User';
+import { UserContextProvider } from './components/context/user/UserContext';
 import { ButtonComponent, InputTextComponent } from './components/HtmlElementEvent';
 import { DivComponent } from './components/NodeElement';
 import { PersonComponent } from './components/Person';
@@ -56,6 +60,15 @@ function App() {
 
       {/** useReducer Hook */}
       <Counter/>
+
+      {/** useContext hooks */}
+      <ThemeContextProvider>
+        <Box></Box>
+      </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User></User>
+      </UserContextProvider>
     </div>
   );
 }
